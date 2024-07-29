@@ -66,7 +66,7 @@ const Slider = () => {
     }, [slides, offset])
 
     return(
-        <div className='slider'>
+        <section className='slider'>
             <button 
                 className='arr arr-left'
                 onClick={() => changeSlide(-1)}><img src={left} alt="Стрілка вліво"/></button>
@@ -88,7 +88,7 @@ const Slider = () => {
             
             <button className='arr arr-right'
                     onClick={() => changeSlide(1)}><img src={right} alt="Стрілка вправо"/></button>
-        </div>
+        </section>
     )
 }
 
