@@ -7,6 +7,11 @@ export const MainServices = () => {
         const res = await request('./assets/data/slides.json');
         return res.slides.map(_transformSlides)
     }
+    
+    const getAllFaq = async() => {
+        const res = await request('./assets/data/faq.json');
+        return res.faqs.map(_transformFaq)
+    }
 
     const _transformSlides = (slide) => {
         return {
@@ -18,6 +23,14 @@ export const MainServices = () => {
             "btns": slide.btns
         }
     }
+    
+    const _transformFaq = (faq) => {
+        return {
+            "_id": faq.id,
+            "title": faq.title,
+            "desc": faq.desc
+        }
+    }
 
-    return {getSlides}
+    return {getSlides, getAllFaq}
 }

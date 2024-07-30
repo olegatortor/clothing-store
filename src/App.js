@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Slider from './components/Slider';
 import Info from './components/Info';
 import ItemGender from './components/ItemGender';
+import Faq from './components/Faq';
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
             <li>Впевненість у якості: Ми пропонуємо тільки сертифіковані та перевірені товари, щоб ви могли бути впевнені у кожній покупці.</li>
         </ol>
       </Info>
+
+      <Faq/>
     </div>
   );
 }
