@@ -3,6 +3,7 @@ import Slider from './components/Slider';
 import Info from './components/Info';
 import ItemGender from './components/ItemGender';
 import Faq from './components/Faq';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
       </Info>
 
       <Faq/>
+
+      <Footer/>
     </div>
   );
 }

@@ -28,6 +28,8 @@
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
+            position: relative;
+            z-index: 3;
 
             h3 {
                 font-size: 16px;
@@ -42,11 +44,13 @@
         }
 
         .faq__content {
+            position: relative;
+            z-index: 2;
             max-height: 0;
-            overflow: hidden;
             opacity: 0;
+            overflow: hidden;
             transform: translateY(-20px);
-            transition: max-height 0.5s ease, opacity 0.2s ease, transform 0.5s ease;
+            transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.3s ease;
 
             p {
                 margin: 0;
@@ -54,8 +58,8 @@
         }
 
         &.show .faq__content {
-            max-height: 200px;
             opacity: 1;
+            max-height: 200px;
             transform: translateY(0); 
         }
 
